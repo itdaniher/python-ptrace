@@ -40,6 +40,7 @@ if HAS_UNAME:
     CPU_I386 = (_machine in ("i386", "i686"))    # compatible Intel 32 bits
     CPU_X86_64 = (_machine in ("x86_64", "amd64"))  # compatible Intel 64 bits
     CPU_ARM = _machine.startswith('arm')
+    CPU_AARCH64 = _machine.startswith('aarch64')
     del _machine
 else:
     # uname() fallback for Windows
